@@ -1,33 +1,39 @@
 <head>
-<script type="text/javascript" src="js/index.js"></script>
-<link rel="stylesheet" href="css/style.css">
+  <title>Tiếq Việt</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <tag autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+  <script type="text/javascript" src="js/translate.js"></script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 
 <div class="wrap">
-  <h1 class="title center">CHTeaM</h1><h2 class="title2 center">
-  Translate
-  </h2><h1 class="title center">Tiếng Việt → Tiếq Việt</h1>
-     <div class="config center">
-  
-  <label for="modelcode">
-     <input type="checkbox" id="modelcode" name="modelcode"> Tôi đồng ý với <a href="#">điều khoản sử dụng của dịch vụ</a>
-    </label>
+  <div class="header">
+    <a class = "logo">TRANSLATE</a>
+    <a>Tiếng Việt → Tiếq Việt</a>
+    </div>
   </div>
-  
-  <textarea id="input" class="content"></textarea>
-  <pre id="output" class="content"></pre>
-<div id="popup1" class="overlay">
-	<div class="popup">
-		<h2>ĐIỀU KHOẢN</h2>
-		<a class="close" href="#popup1">&times;</a>
-		<div class="content">
-			Cảm ơn bạn đã sử dụng công cụ dịch ngôn ngữ CHTeaM Translate Tiếng Việt → Tiếq Việt. Công cụ này được phát triển bởi Phạm Trương Minh Đức (CHTeaM).
-      Về việc bạn bấm vào tick vào ô vuông là bạn đã đồng ý rằng bạn đã hoàn toàn sử dụng công cụ dịch này vào mục đích đúng đắn và không làm điều gì sai trái.
-      Cảm ơn Phó giáo sư, tiến sĩ Bùi Hiền đã sáng tạo ra ngôn ngữ mới cải tiến này.
-		</div>
-	</div>
-</div>
-  
+
+  <div class = "float-container-left">
+    <textarea id="input" placeholder="Nhập văn bản" class="content" oninput = trans()></textarea>
+    <div class="vertical-center">
+      <div class = "tooltip">
+        <button class = "buttonIns" onclick=deleteValue()><i class="fa fa-remove" style="color:#90949f;"></i></button>
+        <span class="tooltiptext">Xóa</span>
+      </div>
+      
+    </div>
+  </div>
+  <div class = "float-container-right">
+    <textarea id="output" readonly="readonly" placeholder="Bản dịch" class="content"></textarea>
+    <div class="vertical-center">
+      <div class = "tooltip">
+        <button class = "buttonIns" onclick=copyValue()><i class="fa fa-copy" style="color:#90949f;"></i></button>
+        <span class="tooltiptext">Sao chép</span>
+      </div>
+      
+    </div>
+  </div>
   <div id="top-image"></div>
+  
 </div>
