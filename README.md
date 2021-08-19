@@ -1,5 +1,5 @@
 # Công cụ chuyển đổi Tiếng Việt sang Tiếq Việt
-Trang này đang được live [tại đây](https://t0t1ph4m.github.io/tieq_viet/).
+Trang này đang được live [tại đây](https://t0t1ph4m.github.io/TieqViet/).
 
 ## Về Tiếq Việt
 
