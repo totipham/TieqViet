@@ -42,38 +42,12 @@ function translate(text) {
             ["T(h|H)", "W"],
             ["(n|N)(h|H)", "$1'"]
         ];
-        // reverse_map = [
-        // ["c", "ch"],
-        // ["C", "Ch"],
-        // ["k", "c"],
-        // ["K", "C"],
-        // ["d", "đ"],
-        // ["D", "Đ"],
-        // ["z(i|í|ì|ĩ|ỉ|ị)", "g$1"],
-        // ["Z(i|í|ì|ĩ|ỉ|ị)", "G$1"],
-        // ["z", "d"],
-        // ["Z", "D"],
-        // ["f", "ph"],
-        // ["F", "Ph"],
-        // ["q", "ng"],
-        // ["Q", "Ng"],
-        // ["x", "kh"],
-        // ["X", "Kh"],
-        // ["W", "Th"],
-        // ["w", "th"],
-        // ["n('|`|’)", "nh"],
-        // ["N('|`|’)", "Nh"]];
 
     if(encrypt){
         for(var i = 0; i < map.length; i++){
             text = text + "";
             text = text.replace(new RegExp(map[i][0], "g"), map[i][1]);
         }
-    // } else {
-    //     for(var i = 0; i < reverse_map.length; i++){
-    //         text = text + "";
-    //         text = text.replace(new RegExp(reverse_map[i][0], "g"), reverse_map[i][1]);
-    //     }
     }
     return text;
 };
